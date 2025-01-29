@@ -1,0 +1,395 @@
+/* Internship.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.internship-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internship-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.internship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.internship-card {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.internship-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.internship-heading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.course-duration {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.in-charge {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.register-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.info-corner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+}
+
+.info-item {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .internship-title {
+    font-size: 1.5rem;
+  }
+
+  .internship-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Testimonials section */
+.testimonials-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px;
+}
+
+.testimonial-feedback {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* General Styling */
+.faq-section {
+  font-family: 'Roboto', sans-serif;
+  margin: 1px auto;
+  padding: 1px;
+  max-width: 900px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+  font-weight: 5000;
+}
+
+/* FAQs Container */
+.faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual FAQ Card */
+.faq-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card.open {
+  background-color: #e0ffe1; /* Light green for open card */
+}
+
+/* Question Style */
+.faq-question {
+  font-size: 1.15rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
+
+/* Answer Style - Initially hidden */
+.faq-answer {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 15px;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show answer on click */
+.faq-card.open .faq-answer {
+  display: block;
+  max-height: 300px;  /* Adjust as needed */
+  opacity: 1;
+}
+
+/* Optional - Add an icon for expansion */
+.faq-question::after {
+  content: "▸";
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.faq-card.open .faq-question::after {
+  transform: rotate(90deg);
+}
+
+
+
+/* Training Section Styling */
+.training-section {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Title Styling */
+.training-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Description Styling */
+.training-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Training Steps Container */
+.training-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Individual Step Styling */
+.step {
+  background-color: #ffffff;
+  border-left: 5px solid #00FFB3;  /* Accent color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Each Step */
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Step Title Styling */
+.step-title {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Step Description Styling */
+.step-description {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-section {
+    padding: 25px;
+  }
+
+  .training-title {
+    font-size: 2rem;
+  }
+
+  .training-description {
+    font-size: 1rem;
+  }
+
+  .step-title {
+    font-size: 1.4rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Internship Incharge Section Styling */
+.internship-incharge {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.incharge-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.incharge-details {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+.incharge-name {
+  font-size: 1.5rem;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.incharge-designation {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.incharge-description {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 15px;
+  line-height: 1.5;
+}

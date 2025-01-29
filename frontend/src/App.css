@@ -1,0 +1,292 @@
+/* src/App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 15px;
+  background-color: #ffffff;
+  border-bottom: px solid #a16060;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+ 
+  font-size: 1.4rem;
+  color: #0056b3;
+  font-weight: 600;
+  transition: color 0.3s ease;
+ 
+}
+
+.logo h1:hover {
+  color: #00800b;
+}
+
+
+/* Navigation Links Styling */
+.nav-links {
+  display: flex;
+  gap: -1px;
+  transition: all 0.4s ease;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  color: #003cff;
+}
+
+/* Hamburger Icon Styling */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 28px;
+  height: 3px;
+  background-color: #000000;
+  margin: 3px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-toggle {
+   
+    display: flex;
+  }
+}
+
+
+
+.footer {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1;
+  min-width: 260px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  color: #00ffb3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+h4 {
+  font-size: 20px;
+  color: #ff0060;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff0060;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links li, .footer-resources li {
+  margin: 8px 0;
+}
+
+.footer-links a, .footer-resources a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-resources a:hover {
+  color: #00ffb3;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #00ffb3;
+}
+
+.social-links a {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  color: #00ffb3;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin-right: 10px;
+  width: calc(70% - 20px);
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background: #00ffb3;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #00d39f;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 2px solid #525050;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #00ffb3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* WhatsApp Chatbot Icon Styling */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1a1a1a; /* WhatsApp Green */
+  border-radius: 50%;
+  padding: 15px; /* Balanced padding for all screen sizes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 1px #000000; /* Subtle glow */
+  color: rgb(0, 255, 38);
+  font-size: 24px; /* Standard icon size */
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Effect */
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Subtle scaling */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 15px #000000; /* Enhanced glow on hover */
+}
+
+/* Icon Styling */
+.whatsapp-icon i {
+  margin: 0;
+}
+
+/* Accessibility Focus State */
+.whatsapp-icon:focus {
+  outline: none;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000; /* Focus glow for keyboard navigation */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .whatsapp-icon {
+      bottom: 15px;
+      right: 15px;
+      padding: 12px; /* Adjust padding for smaller screens */
+      font-size: 32px; /* Slightly smaller icon size */
+  }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1200px) {
+  .whatsapp-icon {
+      bottom: 25px;
+      right: 25px;
+      padding: 18px; /* Increased padding for larger screens */
+      font-size: 32px; /* Larger icon size */
+  }
+}
+
+
+
+

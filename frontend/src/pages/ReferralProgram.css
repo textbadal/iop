@@ -1,0 +1,260 @@
+.referral-program {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .referral-header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .referral-header p {
+    font-size: 1.2rem;
+  }
+  .referral-link-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .referral-link-section h3 {
+    font-size: 1.8rem;
+    color: #2d87f0;
+    margin-bottom: 15px;
+  }
+  
+  .referral-link-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .referral-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .referral-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .copy-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    background-color: #1b5b9f;
+  }
+  
+  .share-buttons {
+    margin-top: 15px;
+  }
+  
+  .share-buttons p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .share-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .share-button.whatsapp {
+    background-color: #25d366;
+  }
+  
+  .share-button.whatsapp:hover {
+    background-color: #128c7e;
+  }
+  
+  .share-button.facebook {
+    background-color: #4267b2;
+  }
+  
+  .share-button.facebook:hover {
+    background-color: #365899;
+  }
+  
+  .share-button.twitter {
+    background-color: #1da1f2;
+  }
+  
+  .share-button.twitter:hover {
+    background-color: #0d95e8;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 15px;
+    line-height: 1.4;
+  }
+  
+  
+  .referral-rewards {
+    background-color: #f9f9f9; /* Light, clean background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .referral-rewards h2 {
+    color: #2d87f0; /* Eye-catching primary color */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .referral-rewards p {
+    font-size: 1rem;
+    color: #333; /* Dark gray for readability */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .referral-rewards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .referral-rewards ul li {
+    background-color: #ffffff; /* White background for list items */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #444; /* Slightly darker gray for contrast */
+    line-height: 1.5;
+  }
+  
+  .referral-rewards ul li strong {
+    color: #ff9800; /* Highlighted color for emphasis */
+    font-weight: bold;
+  }
+  
+  .referral-rewards ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .referral-rewards ul li ul li {
+    font-size: 0.95rem;
+    color: #555; /* Slightly lighter text for nested items */
+  }
+  
+  .referral-rewards ul li ul li::before {
+    content: "•"; /* Bullet for nested items */
+    color: #2d87f0; /* Primary color for bullet */
+    margin-right: 8px;
+  }
+  
+  .referral-rewards p:last-of-type {
+    font-weight: bold;
+    text-align: center;
+    color: #2d87f0; /* Call-to-action color */
+    margin-top: 20px;
+  }
+  
+  
+ 
+  
+  .referral-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  .leaderboard-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  .leaderboard-section h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .leaderboard-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .leaderboard-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .leaderboard-table tr:hover {
+    background: #e6f7ff;
+  }
+  
+  .copy-button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background: #0056b3;
+  }
+  
