@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 const teamMembers = [
   { name: 'Mayank Jha', role: 'Software Developer', imageUrl: 'images/Mayank.WebP' },
   { name: 'Ankit Pandey', role: 'Architect', imageUrl: 'images/Ankit.jpg' },
-  { name: 'Manvi Verma', role: 'Java Developer', imageUrl: 'images/manvi.WebP' },
+  { name: 'Manvi Verma', role: 'Senior Developer', imageUrl: 'images/manvi.WebP' },
   { name: 'Harsh Verma', role: 'Quantity Surveyor', imageUrl: 'images/Harsh.WebP' },
   { name: 'Madhu Kumari', role: 'Recruitment Specialist', imageUrl: 'images/madhu.jpg' },
 
